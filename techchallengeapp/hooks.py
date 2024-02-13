@@ -132,7 +132,11 @@ app_license = "mit"
 
 # Scheduled Tasks
 # ---------------
-
+scheduler_events = {
+    "daily": [
+        "techchallengeapp.api.remove_rejected_candidates"
+    ]
+}
 # scheduler_events = {
 # 	"all": [
 # 		"techchallengeapp.tasks.all"
